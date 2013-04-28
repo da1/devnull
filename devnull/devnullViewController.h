@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface devnullViewController : UIViewController
+@interface devnullViewController : UIViewController <UITextFieldDelegate>
+- (IBAction)changeGreeting:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
